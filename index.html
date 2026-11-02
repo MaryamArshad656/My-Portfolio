@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Maryam Malik | Web Developer</title>
+<meta name="description" content="Portfolio of Maryam Malik, aspiring full stack web developer from Karachi.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=Figtree:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<script>try{var t=localStorage.getItem('theme')||(matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light');document.documentElement.dataset.theme=t}catch(e){}</script>
+</head>
+<body>
+<div class="glow" aria-hidden="true"></div>
+<header class="nav">
+  <a href="#home" class="logo">Maryam<span>.</span></a>
+  <nav id="menu" aria-label="Main">
+    <a href="#about">About</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#contact">Contact</a>
+  </nav>
+  <button id="themeBtn" class="icon-btn" aria-label="Switch between dark and light mode"><span id="themeIcon">🌙</span></button>
+  <button id="burger" class="icon-btn burger" aria-label="Open menu" aria-expanded="false">☰</button>
+</header>
+
+<main>
+<section id="home" class="hero">
+  <p class="hello">Hi, I'm</p>
+  <h1><span class="line">Maryam</span><span class="line">Malik.</span></h1>
+  <p class="role">I build <span id="typed" class="typed"></span><span class="caret"></span></p>
+  <p class="lead">Front-end developer from Karachi, growing into full stack. I turn design ideas into responsive websites that are clean and easy to use.</p>
+  <div class="cta">
+    <a class="btn primary" href="#projects">See my websites</a>
+    <a class="btn" href="#contact">Get in touch</a>
+  </div>
+</section>
+
+<section id="about" class="section reveal">
+  <h2>About me</h2>
+  <div class="about">
+    <p>I'm a self-driven web developer who loves taking an idea and turning it into something people can actually use. I write semantic HTML, style with CSS and Bootstrap, and add behaviour with modern JavaScript.</p>
+    <p>Right now I'm learning React and Node.js to build complete applications, front to back. I also hold a certification in the Microsoft Office Suite (Word, Excel and PowerPoint).</p>
+  </div>
+  <div class="stats">
+    <div><b>5</b><span>live websites</span></div>
+    <div><b>4</b><span>core web tools</span></div>
+    <div><b>2</b><span>technologies I'm learning</span></div>
+  </div>
+</section>
+
+<section id="skills" class="section reveal">
+  <h2>Skills</h2>
+  <div class="skills">
+    <article class="card"><h3>Front-end</h3><div class="chips"><i>HTML5</i><i>CSS3</i><i>JavaScript ES6+</i><i>Bootstrap</i></div></article>
+    <article class="card"><h3>Learning now</h3><div class="chips"><i>React.js</i><i>Node.js</i><i>Back-end basics</i></div></article>
+    <article class="card"><h3>Tools</h3><div class="chips"><i>Git</i><i>GitHub</i><i>MS Office</i></div></article>
+    <article class="card"><h3>Strengths</h3><div class="chips"><i>Responsive design</i><i>Problem solving</i><i>Fast learner</i></div></article>
+  </div>
+</section>
+
+<section id="projects" class="section reveal">
+  <h2>My websites</h2>
+  <p class="sub">Five projects, each live on GitHub Pages.</p>
+  <div id="projectGrid" class="grid"></div>
+</section>
+
+<section id="contact" class="section reveal">
+  <h2>Let's talk</h2>
+  <p class="sub">Have a project or an opportunity? Send me a message.</p>
+  <div class="contact">
+    <form id="form" novalidate>
+      <label>Your name<input id="fName" required autocomplete="name"></label>
+      <label>Your email<input id="fEmail" type="email" required autocomplete="email"></label>
+      <label>Message<textarea id="fMsg" rows="5" required></textarea></label>
+      <button class="btn primary" type="submit">Send message</button>
+      <p id="formNote" class="note" role="status"></p>
+    </form>
+    <aside class="card links">
+      <h3>Find me online</h3>
+      <a href="mailto:maryamarshad.m28@gmail.com">maryamarshad.m28@gmail.com</a>
+      <button id="copyMail" class="btn small" type="button">Copy email</button>
+      <a href="https://github.com/MaryamArshad656" target="_blank" rel="noopener">GitHub</a>
+      <a href="https://linkedin.com/in/maryam-arshad" target="_blank" rel="noopener">LinkedIn</a>
+    </aside>
+  </div>
+</section>
+</main>
+<footer><p>© <span id="year"></span> Maryam Malik. Designed and built by me.</p></footer>
+<script src="script.js"></script>
+</body>
+</html>
